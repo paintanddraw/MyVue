@@ -3,7 +3,8 @@
     <img src="./assets/logo.png">
     <!--<hello></hello>
     <editor></editor>-->
-    <Home></Home>
+<!--    <Home></Home>-->
+    <MyTree></MyTree>
   </div>
 </template>
 
@@ -11,13 +12,15 @@
 import Hello from './components/Hello'
 import Editor from './components/Editor'
 import Home from './components/Echarts'
+import MyTree from './components/Tree'
 
 export default {
   name: 'app',
   components: {
     Hello,
     Editor,
-    Home
+    Home,
+      MyTree
   }
 }
 </script>
