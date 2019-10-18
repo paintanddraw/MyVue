@@ -3,7 +3,7 @@
     <img src="./assets/logo.png">
     <!--<hello></hello>
     <editor></editor>-->
-<!--    <Home></Home>-->
+    <Home></Home>
     <MyTree></MyTree>
   </div>
 </template>
