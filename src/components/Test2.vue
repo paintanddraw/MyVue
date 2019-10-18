@@ -1,0 +1,36 @@
+
+<template>
+  <div id="app">
+    <div v-if="!network">
+      <h3>我没网了</h3>
+      <div @click="onRefresh">刷新</div>
+    </div>
+    <router-view />
+  </div>
+</template>
+
+<script>
+import { mapState } from "vuex";
+export default {
+  name: "App",
+  computed: {
+    ...mapState(["network"])
+  },
+  methods: {
+    // 通过跳转一个空页面再返回的方式来实现刷新当前页面数据的目的
+    onRefresh() {
+      this.$router.replace("/refresh");
+    },
+    // 测试 article 模块里的接口articleDetail
+    onLoad(id) {
+      this.$api.article
+        .articleDetail(id, {
+          api: 123
+        })
+        .then(res => {
+          // 执行某些操作
+        });
+    }
+  }
+};
+</script>

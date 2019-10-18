@@ -3,8 +3,9 @@
     <img src="./assets/logo.png">
     <!--<hello></hello>
     <editor></editor>-->
-    <Home></Home>
-    <MyTree></MyTree>
+    <!-- <Home></Home>
+    <MyTree></MyTree> -->
+    <router-view></router-view>
   </div>
 </template>
 
