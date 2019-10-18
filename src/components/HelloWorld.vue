@@ -3,6 +3,7 @@
      <p>
       <router-link to="/hello">hello</router-link>
       <router-link to="/chart">chart</router-link>
+      <router-link to="/user">user</router-link>
     </p>
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
